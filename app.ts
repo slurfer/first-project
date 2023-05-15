@@ -1,16 +1,14 @@
-const person: {
-    name: string
-    age: 30,
-    hobbies: string[],
-    role: [number, string]
-} = {
+
+enum Role { ADMIN, READ_ONLY, AUTHOR }
+
+
+const person = {
     name: "Maxmilian",
     age: 30,
     hobbies: ['sports', 'Cooking'],
-    role: [2, 'author']
+    role: Role.ADMIN
 }
 
-person.role.push()
 
 let favouriteAcrivities: string[]
 
