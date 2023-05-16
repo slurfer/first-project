@@ -1,20 +1,9 @@
-
-enum Role { ADMIN, READ_ONLY, AUTHOR }
-
-
-const person = {
-    name: "Maxmilian",
-    age: 30,
-    hobbies: ['sports', 'Cooking'],
-    role: Role.ADMIN
+function add(n1: number, n2: number) {
+  return n1 + n2;
 }
 
-
-let favouriteAcrivities: string[]
-
-console.log(person)
-
-
-for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase())
+function printResult(num: number): void {
+  console.log("Result: " + num);
 }
+
+printResult(add(5, 12));
